@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "exit-node" {
-  ami           = "ami-0f65671a86f061fcd"
+  ami           = "ami-0028983ab738d552e"
   instance_type = "t2.micro"
   key_name      = "proxycannon"
   vpc_security_group_ids = ["${aws_security_group.exit-node-sec-group.id}"]
